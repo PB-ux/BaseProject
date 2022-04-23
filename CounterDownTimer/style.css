@@ -7,16 +7,44 @@
 }
 
 body {
-  background: rgb(210, 232, 255) url("bg.jpg") center center no-repeat;
+  background: rgb(210, 232, 255) url("bg.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
 
+h1 {
+  margin-bottom: 5rem;
+  padding: 0rem 2rem;
+}
+
 .container-counterdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.counterdown-box {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 321px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
