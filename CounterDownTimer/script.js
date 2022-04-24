@@ -2,6 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
+const container = document.querySelector(".container-counterdown");
 
 const myNewYear = "1 Jan 2023";
 
@@ -20,6 +21,11 @@ function counterdownTimer() {
   hoursEl.innerHTML = formatTime(hours);
   minutesEl.innerHTML = formatTime(minutes);
   secondsEl.innerHTML = formatTime(seconds);
+
+  if (days == 0) {
+    clearInterval();
+    container.innerHTML = `<p>Time is up</p>`;
+  }
 }
 
 function formatTime(time) {
