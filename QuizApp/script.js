@@ -52,7 +52,6 @@ const finish = document.querySelector(".quiz-finish");
 const quizList = document.querySelector(".quiz-list");
 
 let counterQuestions = 0;
-let checkedItem = undefined;
 let scope = 0;
 
 addQuestion();
@@ -68,6 +67,8 @@ function addQuestion() {
 }
 
 function getAnswer() {
+  let checkedItem = undefined;
+
   input.forEach((element) => {
     if (element.checked) {
       checkedItem = element;
