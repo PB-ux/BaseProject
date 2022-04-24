@@ -1,3 +1,0 @@
-### Base Project
-
-- Counterdown Timer
