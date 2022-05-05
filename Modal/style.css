@@ -7,8 +7,9 @@
 }
 
 body {
-  background: rgb(179, 191, 181) url("bg.jpg") center center no-repeat fixed;
-  background-size: cover;
+  background: #403b4a;
+  background: -webkit-linear-gradient(to right, #e7e9bb, #403b4a);
+  background: linear-gradient(to right, #e7e9bb, #403b4a);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,14 +18,11 @@ body {
   min-height: 100vh;
 }
 
-.bg_blur {
-  backdrop-filter: blur(5px);
-}
-
-.container {
-  background-color: #fff;
+/* Styles content box */
+.box {
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-  color: #07131b;
+  color: rgb(7, 19, 27);
   border-radius: 5px;
   width: 600px;
   max-width: 100%;
@@ -32,60 +30,86 @@ body {
   text-align: center;
 }
 
-.box-modal-title {
+.box-title {
   text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.box-modal-btn {
-  background-color: rgb(159, 201, 205);
+.box-btn {
+  background-color: #403b4a;
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2rem;
   cursor: pointer;
-  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s;
 }
 
-.box-modal-btn:hover {
-  background-color: rgb(120, 165, 168);
+.box-btn:hover {
+  background-color: rgb(135, 125, 153);
 }
 
+/* Styles modal  */
 .modal {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: rgb(7, 20, 28);
+  padding: 4rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: none;
-  background-color: #fff;
-  color: #07131b;
-  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
   width: 600px;
-  max-width: 100%;
-  padding: 4rem;
   text-align: center;
+}
+
+.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
 .modal-title {
   text-transform: uppercase;
 }
 
-.modal-btn-close {
+.modal-btn {
   border: none;
+  background-color: #403b4a;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-}
-
-.modal-btn-close {
-  background-color: #fff;
-  border: none;
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: -28px;
+  right: 5px;
+  transition: all 0.3s;
 }
 
-.closed {
-  display: block;
+.modal-btn__line {
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 25px;
+  height: 4px;
+}
+
+.modal-btn__line:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-btn:hover {
+  transform: rotate(90deg);
+  background-color: rgb(135, 125, 153);
 }

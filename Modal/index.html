@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Modal -->
     <div class="modal">
       <h1 class="modal-title">Modal</h1>
-      <button class="modal-btn-close">
-        <img src="close.png" alt="close" />
+      <button class="modal-btn" onclick="closeModal()">
+        <div class="modal-btn__line"></div>
+        <div class="modal-btn__line"></div>
       </button>
     </div>
-    <div class="container">
-      <h1 class="box-modal-title">Modal project</h1>
-      <button class="box-modal-btn">Open modal</button>
+    <!-- Trigger / Content box -->
+    <div class="box">
+      <h1 class="box-title">Modal project</h1>
+      <button class="box-btn" onclick="openModal()">Open modal</button>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
