@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--buttons -->
+    <div class="container-btn">
+      <button
+        class="btn btn-search"
+        onclick="show('Whoa! You found me!', 'Hide back')"
+      >
+        Search
+      </button>
+      <button class="btn btn-run" onclick="show('Please don\'t run!', 'Close')">
+        Run
+      </button>
+    </div>
+    <!-- background layer -->
+    <div class="black-layer"></div>
+    <!-- side menu -->
+    <div class="container-side-menu">
+      <div class="content">
+        <h3 class="content__title">Whoa! You found me!</h3>
+        <button class="btn btn-close">Hide back</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
