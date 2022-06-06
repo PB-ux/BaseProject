@@ -53,6 +53,7 @@ li:fist-child {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .food:checked + label {
