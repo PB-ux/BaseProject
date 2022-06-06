@@ -4,3 +4,4 @@
 - :heavy_check_mark: [Quiz App](https://pb-ux.github.io/BaseProject/QuizApp/)
 - :heavy_check_mark: [Modal](https://pb-ux.github.io/BaseProject/Modal/)
 - :heavy_check_mark: [Side Menu](https://pb-ux.github.io/BaseProject/SideMenu/)
+- :heavy_check_mark: [MultiSelect](https://pb-ux.github.io/BaseProject/MultiSelect/)
