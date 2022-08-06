@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Responsive Bar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo">Moon</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Songs</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Gallery</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Poetry</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Quiz</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-burger">
+          <span class="menu-burger__line"></span>
+          <span class="menu-burger__line"></span>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container main__container">
+        <div class="main-hero">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="src/img/moon.jpg" alt="moon" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/img/autumn.jpg" alt="autumn" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/img/moon-gold.jpg" alt="/moon-gold" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/img/moon-grey.jpg" alt="moon-grey" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="main-hero__info">
+            <h3 class="main-hero__title">Mon in the Mone</h3>
+            <div class="main-hero__descr">
+              <p>
+                Mon in the mone stond and strit; On his botforke his burthen he
+                bereth. It is muche wonder that he na doun slyt.
+              </p>
+              <p>
+                For doute leste he valle he shoddreth ant shereth.When the forst
+                freseth muche chele he byd.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main-posts">
+          <div class="main-posts__item">
+            <a class="main-posts__picture">
+              <img src="src/img/moonrise.jpg" alt="Moonrise" />
+            </a>
+            <div class="main-posts__content">
+              <a class="main-posts__title">Moonrise</a>
+              <p class="main-posts__descr">
+                That finds no object worth its constancy?
+              </p>
+              <p class="main-posts__data">Feb 24</p>
+            </div>
+          </div>
+          <div class="main-posts__item">
+            <a class="main-posts__picture">
+              <img src="src/img/autumn.jpg" alt="Autumn" />
+            </a>
+            <div class="main-posts__content">
+              <a class="main-posts__title">Autumn</a>
+              <p class="main-posts__descr">
+                But the similarities don’t end there. Sidney and Shelley both
+                observe the pallor of the moon – as you might expect – but they
+                both also remark on the sad or wear...
+              </p>
+              <p class="main-posts__data">Feb 24</p>
+            </div>
+          </div>
+          <div class="main-posts__item">
+            <a class="main-posts__picture">
+              <img src="src/img/moon-gold.jpg" alt="Moon gold" />
+            </a>
+            <div class="main-posts__content">
+              <a class="main-posts__title">The Moon was but a Chin of Gold</a>
+              <p class="main-posts__descr">
+                ‘The Moon was but a Chin of Gold’ is a fine example of her
+                idiosyncratic style.
+              </p>
+              <p class="main-posts__data">Feb 24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/script/index.js"></script>
+  </body>
+</html>
